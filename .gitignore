@@ -1,0 +1,33 @@
+# Raw / processed sequencing data
+data/
+results/
+*.fastq
+*.fastq.gz
+*.bam
+*.bai
+*.sam
+*.cns
+*.cnr
+
+# Large serialized analysis objects
+*.pkl
+*.pickle
+*.h5
+*.h5ad
+*.rds
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

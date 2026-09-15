@@ -1,0 +1,28 @@
+software:
+  STAR: "2.7.11b"
+  CNVkit: "0.9.12"
+  scikit_learn: "1.7.1"
+  StateScope: "1.0.6"
+rna:
+  genome: "GRCh38"
+  annotation: "GENCODE v46"
+  two_pass: true
+dna:
+  genome: "hg19"
+purity:
+  candidate_min: 0.30
+  candidate_max: 1.00
+  candidate_step: 0.05
+  selection: "minimum segment-weighted RMSE"
+statescope:
+  tumor_type: "PDAC"
+  ncores: 16
+  prior_compartment: "Epithelial"
+  prior_upper_clip: 0.99
+  refinement_calls: 2
+  state_discovery:
+    weighing: "Omega"
+    candidate_k: [2,3,4,5,6,7,8,9]
+    n_iter: 10
+    n_final_iter: 100
+    min_cophenetic: 0.9
