@@ -7,7 +7,7 @@ Publication-facing code and computational provenance for the StateScope-based de
 ```text
 RNA-seq FASTQ
   -> 01_align_rnaseq_star.sh
-  -> 02_build_statescope_inputs.R ----------------------+-------------------------------------
+  -> 02_build_statescope_inputs.R ----------------------+
                                                         |                                                                                            
 DNA-seq FASTQ                                           |
   -> 03_align_dna_fastq.sh                              |
