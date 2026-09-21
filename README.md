@@ -10,7 +10,8 @@ RNA-seq FASTQ
   -> 02_build_statescope_inputs.R ----------------------+
                                                         |                                                                                            
 DNA-seq FASTQ                                           |
-  -> 03_align_dna_fastq.sh                              |
+  -> 03_align_dna_fastq.sh   
+  -> 04_run_purity_grid.sh                              |
   -> 05_run_cnvkit_wgs.sh                               |
   -> 06_select_best_purity.py --------------------------+
                                                         |
@@ -38,9 +39,6 @@ DNA-seq FASTQ                                           |
 - prior capped at 0.99
 - two sequential `Refinement()` calls
 - `StateDiscovery()` defaults from the original v1.0.6 environment: Omega weighting, K=2–9, 10 initial restarts/K, cophenetic threshold 0.9, 100 final restarts
-
-## Important provenance note
-The original CNVkit purity-grid generation command is no longer available. The candidate range (0.30–1.00 in steps of 0.05) and downstream selection procedure are known, but the exact historical `cnvkit.py call` options are not. The repository records this explicitly rather than presenting reconstructed code as historical provenance.
 
 ## Biological state labels
 Biological annotation was performed separately and is described in the manuscript rather than encoded in this repository.
