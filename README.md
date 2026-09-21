@@ -42,5 +42,3 @@ DNA-seq FASTQ                                           |
 
 ## Biological state labels
 Biological annotation was performed separately and is described in the manuscript rather than encoded in this repository.
-
-See `docs/METHODS_NOTES.md`, `docs/REVIEWER_CHECKLIST.md`, and `docs/STATESCOPE_1.0.6_DEFAULTS.md`.
